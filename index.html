@@ -9,6 +9,12 @@
     <title>thx sun</title>
 
     <style>
+      .whole {
+        margin: 20px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        border: 10px;
+      }
       .revi {
         color: coral;
         font-size: 50px;
@@ -18,14 +24,14 @@
         font-size: 40px;
       }
       html {
-        background-image: url(img/bsnod.jpg);
+        background-image: url(img/bsnod.png);
         background-size: cover;
       }
 
       .pict {
         width: 200px;
         border-radius: 100px;
-        float: left;
+        float: center;
         margin: 10px;
       }
 
@@ -34,46 +40,115 @@
         font-size: 50px;
       }
 
+      .boxes-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .box-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
       .musicttl {
         color: chartreuse;
         font-size: 50px;
         font-style: italic;
+        display: block;
+        margin: 0;
       }
 
       .music {
         color: chartreuse;
         font-size: 40px;
+        margin: 0;
+      }
+
+      .musicdiv {
+        width: 300px;
+        border: 15px solid chartreuse;
+        padding: 50px;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .humanttl {
+        color: #c688ff;
+        font-size: 50px;
+        font-style: italic;
+        display: block;
+        margin: 0;
+      }
+
+      .human {
+        color: #c688ff;
+        font-size: 40px;
+        margin: auto;
+      }
+
+      .humandiv {
+        width: 300px;
+        border: 15px solid #c688ff;
+        padding: 50px;
+        display: inline-block;
+        vertical-align: top;
       }
     </style>
   </head>
 
   <body>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
-      ><img class="pict" src="img/ComfyUI_00037_.png"
-    /></a>
-    <p class="revi">Hi! i'm revi</p>
+    <div class="whole">
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+        ><img class="pict" src="img/ComfyUI_00037_.png"
+      /></a>
+      <p class="revi">Hi! i'm revi</p>
 
-    <p class="pres">i like vrc and role playing.</p>
+      <p class="pres">i like vrc and role playing.</p>
 
-    <p class="pres">
-      i also like shitty site cause it remind me my old 3DS from years ago
-    </p>
+      <p class="pres">
+        i also like shitty site cause it remind me my old 3DS from years ago
+      </p>
 
-    <p class="pres">
-      i'm actually trying to learn HTML cause why not, i don't have anything
-      better to do
-    </p>
+      <p class="pres">
+        i'm actually trying to learn HTML cause why not, i don't have anything
+        better to do
+      </p>
 
-    <p class="likettl">what else do i like?</p>
+      <p class="likettl">what else do i like?</p>
 
-    <p class="musicttl">music</p>
+      <div class="boxes-container">
+        <div class="box-section">
+          <p class="musicttl">music</p>
 
-    <ul class="music">
-      <li>DSBM</li>
-      <li>break core</li>
-      <li>metal</li>
-      <li>old french rap</li>
-      <li>boum boum &#40;tek&#41;</li>
-    </ul>
+          <div class="musicdiv">
+            <ul class="music">
+              <li>DSBM</li>
+              <li>break core</li>
+              <li>metal</li>
+              <li>old french rap</li>
+              <li>boum boum &#40;tek&#41;</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="box-section">
+          <p class="humanttl">humans</p>
+
+          <div class="humandiv">
+            <ul class="human">
+              <li>my lovely BF❤️</li>
+              <li>sun</li>
+              <li>gru 3.0</li>
+              <li>vulcanorFR</li>
+              <li>my mother</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
